@@ -1,0 +1,130 @@
+:root {
+    --main: #2196f3;
+    --second: #009688;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game {
+    background-color: #EEE;
+    min-height: 100vh;
+}
+.container {
+    margin: auto;
+    max-width: 900px;
+}
+
+.name {
+    background-color: var(--main);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.message {
+padding: 15px;
+margin: 15px 0;
+border-radius: 8px;
+text-align: center;
+}
+
+.message span {
+    font-weight: bold;
+    color: var(--second);
+}
+.message span::before {
+content: '[ ';
+}
+.message span::after {
+    content: ' ]';
+}
+.start {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: var(--second);
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.the-word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main);
+    user-select: none;
+}
+
+.input {
+margin: 15px 0;
+width: 100%;
+display: block;
+padding: 15px;
+border: 3px solid var(--main);
+font-size: 20px;
+text-align: center;
+text-transform: capitalize;
+border-radius: 8px;
+caret-color: var(--main);
+}
+.input:focus {
+    outline: none;
+}
+.upcoming-word {
+background-color: white;
+margin: 15px 0;
+padding: 15px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.upcoming-word div {
+    background-color: var(--main);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.control {
+display: flex;
+justify-content: space-between;
+background-color: white;
+padding: 15px;
+}
+
+.control span {
+    font-weight: bold;
+    color: var(--second);
+}
+
+.finish {
+font-weight: bold;
+font-size: 40px;
+padding: 15px;
+text-align: center;
+}
+
+.finish .good{
+    color: var(--main);
+    border: 1px solid red;
+    padding: 15px;
+    margin: 5px;
+    background: #fff59d;
+    border-radius: 40px;
+}
+
+.finish .bad{
+    color: red;
+}
